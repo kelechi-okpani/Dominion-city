@@ -142,5 +142,75 @@ export const reelsData = [
     desc: "Mastering your desires to align with your prophetic destiny.", 
     views: "1.2K", 
     icon: <Zap size={14}/> 
+  },
+  { 
+    id: 115, 
+    title: "Intimate Worship Sessions With DC Angels 5.0", 
+    date: "Mar 3, 2026", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=63Y9OJK0SWE", 
+    desc: "A prophetic praise and worship experience focusing on the breakthrough power of gratitude.", 
+    views: "490", 
+    icon: <Zap size={14}/> 
+  },
+  { 
+    id: 116, 
+    title: "Intimate Worship Sessions With DC Angels 4.0", 
+    date: "Mar 2, 2026", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=DM-mJikHyrg", 
+    desc: "Deep atmospheric worship designed to host the presence of God and shift spiritual climates.", 
+    views: "523", 
+    icon: <Flame size={14}/> 
+  },
+  { 
+    id: 117, 
+    title: "Intimate Worship Sessions With DC Angels 3.0", 
+    date: "Feb 28, 2026", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=GB2vQUpBWPo", 
+    desc: "A soulful journey of adoration featuring hymns and spontaneous spiritual songs.", 
+    views: "768", 
+    icon: <Flame size={14}/> 
+  },
+  { 
+    id: 118, 
+    title: "Nathaniel Bassey Live @ US Camp Meeting 2025", 
+    date: "Aug 15, 2025", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=pmYJkYG3QZg", 
+    desc: "A powerful atmosphere of deep worship and prophetic sounds led by Nathaniel Bassey.", 
+    views: "45K", 
+    icon: <Flame size={14}/> 
+  },
+  { 
+    id: 119, 
+    title: "Grace Idowu Live @ Next Level Conference 2025", 
+    date: "Sep 12, 2025", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=Q2N2hyEYgC0", 
+    desc: "Intense ministration featuring spiritual chants and soul-stirring medleys.", 
+    views: "22K", 
+    icon: <Zap size={14}/> 
+  },
+  { 
+    id: 120, 
+    title: "Sunmisola & Yinka Okeleye Live 2025", 
+    date: "Oct 5, 2025", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=X-zekB0WJPQ", 
+    desc: "A landmark worship session focusing on the power of the believer's authority.", 
+    views: "15K", 
+    icon: <Crown size={14}/> 
+  },
+  { 
+    id: 121, 
+    title: "DC Angels Soaking Worship Session", 
+    date: "Jan 10, 2026", 
+    cat: "Worship", 
+    link: "https://www.youtube.com/watch?v=d3QLSmMg0r8", 
+    desc: "A extended soaking session designed for personal prayer and meditation.", 
+    views: "8.2K", 
+    icon: <Shield size={14}/> 
   }
 ];

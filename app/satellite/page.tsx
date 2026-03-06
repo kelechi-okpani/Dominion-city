@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Navigation, Search, ExternalLink } from 'lucide-react';
-import { branches } from '../components/data/media';
+import { branches } from '../components/data/branches';
 
 const containerStyle = { width: '100%', height: '100%' };
 

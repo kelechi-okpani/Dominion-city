@@ -4,7 +4,10 @@ import { motion, HTMLMotionProps } from 'framer-motion';
 import { 
   ArrowRight, Globe, Zap, Heart, 
   Users, MapPin, Clock, Calendar, GraduationCap, Trophy,
-  ChevronRight, Flame, Sparkles
+  ChevronRight, Flame, Sparkles,
+  BookOpen,
+  Music,
+  Mic
 } from 'lucide-react';
 import HeroVideo from './components/HeroVideo';
 import Gallery from './components/Gallery/Moving-Gallery';
@@ -151,13 +154,28 @@ export default function HomeContent() {
             <p className="text-slate-500 font-light text-base md:text-lg">Empowering youth and community through UN Sustainable Development Goals.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: <Users size={28}/>, label: 'National Youth Summit', count: '50k+', img: abujaHqMedia[5] },
-              { icon: <Trophy size={28}/>, label: 'Scholarships Awarded', count: '100+', img: abujaHqMedia[8] },
-              { icon: <Globe size={28}/>, label: 'Global SDG Goals', count: '6', img: abujaHqMedia[10] }
-            ].map((stat, i) => (
+          {[
+            { 
+              icon: <BookOpen size={28}/>, 
+              label: 'The Word', 
+              count: 'Deep Truths', 
+              img: abujaHqMedia[16] 
+            },
+            { 
+              icon: <Music size={28}/>, 
+              label: 'Worship', 
+              count: 'Intimate', 
+              img: abujaHqMedia[8] 
+            },
+            { 
+              icon: <Mic size={28}/>, 
+              label: 'Prayers', 
+              count: 'Fire & Power', 
+              img: abujaHqMedia[14] 
+            }
+          ].map((stat, i) => (
               <div key={i} className="p-1 w-full bg-slate-50 rounded-[2.5rem] border border-slate-50 transition-all hover:bg-white hover:shadow-2xl group overflow-hidden">
-                <div className="h-48 w-full overflow-hidden rounded-t-[2.3rem]">
+                <div className="h-58 w-full overflow-hidden rounded-t-[2.3rem]">
                    <img src={stat.img} alt={stat.label} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                 </div>
                 <div className="p-10">
