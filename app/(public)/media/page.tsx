@@ -2,9 +2,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Calendar, Clock, ExternalLink, Play, Search, Tag, X } from "lucide-react";
 import { useMemo, useState, useEffect } from "react";
-import { broadcastData } from "../components/data/broadcastData";
-import { ReelsGallery } from "../components/Gallery/ReelsGallery";
-import Socials from "../components/socials";
+import { broadcastData } from "../../components/data/broadcastData";
+import { ReelsGallery } from "../../components/Gallery/ReelsGallery";
+import Socials from "../../components/socials";
 
 export default function SermonLibrary() {
   const [searchTerm, setSearchTerm] = useState("");

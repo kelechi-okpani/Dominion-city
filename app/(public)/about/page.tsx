@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Heart, Users, ArrowRight, Star, BookOpen, GraduationCap, Globe } from 'lucide-react';
-import { abujaHqMedia, dominionCommunityMedia } from '../components/data/media';
-import Gallery from '../components/Gallery/Moving-Gallery';
-import Socials from '../components/socials';
+import { abujaHqMedia, dominionCommunityMedia } from '../../components/data/media';
+import Gallery from '../../components/Gallery/Moving-Gallery';
+import Socials from '../../components/socials';
 
 const pillars = [
   {

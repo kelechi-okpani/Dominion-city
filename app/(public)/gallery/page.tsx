@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, ArrowRight, Camera, ZoomIn, Heart } from 'lucide-react';
-import { abujaHqMedia } from '../components/data/media';
-import GlobalAtmosphereSlider from '../components/Gallery/GallerySection';
-import Socials from '../components/socials';
+import { abujaHqMedia } from '../../components/data/media';
+import GlobalAtmosphereSlider from '../../components/Gallery/GallerySection';
+import Socials from '../../components/socials';
 
 export default function GalleryPage() {
 

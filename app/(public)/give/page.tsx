@@ -14,7 +14,7 @@ import {
   ChevronRight,
   ShieldCheck
 } from 'lucide-react';
-import Socials from '../components/socials';
+import Socials from '../../components/socials';
 
 const accountData = [
   {
