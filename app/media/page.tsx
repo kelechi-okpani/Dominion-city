@@ -4,6 +4,7 @@ import { Calendar, Clock, ExternalLink, Play, Search, Tag, X } from "lucide-reac
 import { useMemo, useState, useEffect } from "react";
 import { broadcastData } from "../components/data/broadcastData";
 import { ReelsGallery } from "../components/Gallery/ReelsGallery";
+import Socials from "../components/socials";
 
 export default function SermonLibrary() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -136,6 +137,9 @@ export default function SermonLibrary() {
           </div>
         )}
       </div>
+
+           {/* 5. DUAL CALL TO ACTION */}
+          <Socials/>
 
       {/* VIDEO MODAL OVERLAY */}
       <AnimatePresence>

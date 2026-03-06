@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
+
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -37,7 +39,7 @@ export default function Footer() {
             Raising Leaders that Transform Society. A global movement committed to your total spiritual and intellectual development.
           </p>
           <div className="flex gap-3">
-            {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
+            {[Facebook, Instagram, Youtube].map((Icon, i) => (
               <a key={i} href="#" className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-[#001A4D] transition-all duration-300">
                 <Icon size={18} />
               </a>
@@ -111,11 +113,22 @@ export default function Footer() {
             &copy; 2026 Dominion City Abuja HQ. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-xs uppercase tracking-widest font-bold text-slate-400">
-            <Link href="#" className="hover:text-[#D4AF37] transition-colors">Privacy</Link>
-            <Link href="#" className="hover:text-[#D4AF37] transition-colors">Terms</Link>
+            <Link href="#" className=" py-3 hover:text-[#D4AF37] transition-colors">Privacy</Link>
+            <Link href="#" className=" py-3 hover:text-[#D4AF37] transition-colors">Terms</Link>
+
             <button onClick={scrollToTop} className="hover:text-[#D4AF37] transition-colors flex items-center gap-2">
               Back to top <ArrowUpRight size={14} className="-rotate-45" />
             </button>
+
+            <Link href="/login" className="cursor-pointer hover:text-[#D4AF37] transition-colors">
+            
+             <button className="cursor-pointer bg-[#D4AF37] text-white  rounded-2xl font-black uppercase  text-[11px] shadow-xl shadow-blue-900/10  flex items-center gap-2 px-4 py-2 hover:bg-[#001A4D] hover:text-[#D4AF37] transition-all">
+                  Admin Portal <ArrowUpRight size={14}  />
+               </button>
+            </Link>
+
+             
+
           </div>
         </div>
       </div>

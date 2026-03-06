@@ -14,6 +14,7 @@ import {
   ChevronRight,
   ShieldCheck
 } from 'lucide-react';
+import Socials from '../components/socials';
 
 const accountData = [
   {
@@ -185,6 +186,12 @@ export default function GivingPage() {
         .custom-scrollbar::-webkit-scrollbar { width: 4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
       `}</style>
+
+
+      {/* DUAL CALL TO ACTION */}
+          <Socials/>
+
+          
     </div>
   );
 }

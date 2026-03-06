@@ -6,6 +6,7 @@ import {
   CheckCircle2, Sparkles, ChevronRight, ShieldCheck, TrendingUp, Clock, MapPin
 } from 'lucide-react';
 import { abujaHqMedia } from '../components/data/media';
+import Socials from '../components/socials';
 
 
 export default function TrainingPortals() {
@@ -179,6 +180,10 @@ export default function TrainingPortals() {
           </button>
         </motion.div>
       </section>
+
+      {/* DUAL CALL TO ACTION */}
+          <Socials/>
+          
 
     </div>
   );

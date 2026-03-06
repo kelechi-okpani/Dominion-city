@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Calendar, MapPin, Zap, ArrowRight, CheckCircle, Flame, Star, Trophy, Clock, Sparkles } from 'lucide-react';
 import FeaturedProgram from '../components/Programs/FeaturedProgram';
 import { pastEvents2025, upcomingEvents2026 } from '../components/data/program';
+import Socials from '../components/socials';
 
 
 export default function Programs() {
@@ -87,6 +88,10 @@ export default function Programs() {
         </div>
 
       </div>
+
+      {/* DUAL CALL TO ACTION */}
+          <Socials/>
+          
     </div>
   );
 }

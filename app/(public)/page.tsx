@@ -9,12 +9,13 @@ import {
   Music,
   Mic
 } from 'lucide-react';
-import HeroVideo from './components/HeroVideo';
-import Gallery from './components/Gallery/Moving-Gallery';
-import ResidentPastorSection from './components/ResidentPastorSection';
-import { abujaHqMedia } from './components/data/media';
+import HeroVideo from '../components/HeroVideo';
+import Gallery from '../components/Gallery/Moving-Gallery';
+import ResidentPastorSection from '../components/ResidentPastorSection';
+import { abujaHqMedia } from '../components/data/media';
 import Image from "next/image";
 import HeroImg from "@/public/asset/mpa2.jpg";
+import Socials from '../components/socials';
 
 
 
@@ -249,6 +250,10 @@ export default function HomeContent() {
         </div>
       </section>
 
+      {/* DUAL CALL TO ACTION */}
+          <Socials/>
+
+          
       {/* 7. CTA */}
       <section className="bg-slate-50 py-24 px-6 text-center border-t border-slate-100 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
@@ -268,6 +273,7 @@ export default function HomeContent() {
         </div>
       </section>
 
+   
     </div>
   );
 }

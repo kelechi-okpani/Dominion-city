@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Facebook, Instagram, ArrowRight, Camera, ZoomIn, Heart } from 'lucide-react';
 import { abujaHqMedia } from '../components/data/media';
 import GlobalAtmosphereSlider from '../components/Gallery/GallerySection';
+import Socials from '../components/socials';
 
 export default function GalleryPage() {
 
@@ -175,51 +176,7 @@ export default function GalleryPage() {
 
 
       {/* 5. DUAL CALL TO ACTION */}
-      <section className="mt-32 max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Instagram Card */}
-          <motion.a 
-            whileHover={{ y: -10 }}
-            href="https://www.instagram.com/dominion_city_abuja?igsh=cGJrbDJpMmJ3bXVk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative p-12 rounded-[3rem] bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] overflow-hidden"
-          >
-            <div className="relative z-10 text-white">
-              <Instagram size={40} className="mb-6 group-hover:rotate-12 transition-transform" />
-              <h3 className="text-3xl font-serif font-bold mb-4">Follow on Instagram</h3>
-              <p className="text-white/80 mb-8 font-medium">Daily reels, service highlights, and community stories.</p>
-              <div className="flex items-center gap-2 font-black uppercase text-[10px] tracking-widest">
-                Visit Profile <ArrowRight size={14} />
-              </div>
-            </div>
-            <div className="absolute top-0 right-0 p-8 opacity-10">
-              <Instagram size={200} />
-            </div>
-          </motion.a>
-
-          {/* Facebook Card */}
-          <motion.a 
-            whileHover={{ y: -10 }}
-            href="https://web.facebook.com/dominioncity/photos"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative p-12 rounded-[3rem] bg-[#003399] overflow-hidden"
-          >
-            <div className="relative z-10 text-white">
-              <Facebook size={40} className="mb-6 group-hover:rotate-12 transition-transform" />
-              <h3 className="text-3xl font-serif font-bold mb-4">Join us on Facebook</h3>
-              <p className="text-white/80 mb-8 font-medium">Full photo albums, live broadcasts, and event updates.</p>
-              <div className="flex items-center gap-2 font-black uppercase text-[10px] tracking-widest">
-                View Archive <ArrowRight size={14} />
-              </div>
-            </div>
-            <div className="absolute top-0 right-0 p-8 opacity-10">
-              <Facebook size={200} />
-            </div>
-          </motion.a>
-        </div>
-      </section>
+          <Socials/>
     </div>
   );
 }

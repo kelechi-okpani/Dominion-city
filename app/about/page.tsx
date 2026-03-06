@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Target, Heart, Users, ArrowRight, Star, BookOpen, GraduationCap, Globe } from 'lucide-react';
 import { abujaHqMedia, dominionCommunityMedia } from '../components/data/media';
 import Gallery from '../components/Gallery/Moving-Gallery';
+import Socials from '../components/socials';
 
 const pillars = [
   {
@@ -179,6 +180,10 @@ export default function AboutUs() {
         </div>
       </section>
 
+  {/* DUAL CALL TO ACTION */}
+          <Socials/>
+
+          
       {/* 5. FINAL CTA */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto bg-[#003399] rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
