@@ -2,7 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Heart, Users, ArrowRight, Star, BookOpen, GraduationCap, Globe } from 'lucide-react';
-import { abujaHqMedia } from '../components/data';
+import { abujaHqMedia, dominionCommunityMedia } from '../components/data/media';
+import Gallery from '../components/Gallery/Moving-Gallery';
 
 const pillars = [
   {
@@ -23,7 +24,8 @@ const pillars = [
 ];
 
 export default function AboutUs() {
-  const heroImage = abujaHqMedia[4] || "https://images.unsplash.com/photo-1510590337019-5ef8d3d32116?auto=format&fit=crop&q=80";
+  // const heroImage = abujaHqMedia[4]
+  const heroImage = dominionCommunityMedia[4]
   const founderImage = abujaHqMedia[3] || heroImage;
   const collageImages = abujaHqMedia.slice(2, 6);
 
@@ -65,11 +67,14 @@ export default function AboutUs() {
             </div>
             <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 hidden md:block">
               <p className="text-4xl font-serif font-bold text-[#003399]">Gudu HQ</p>
-              <p className="text-slate-400 font-bold uppercase text-[10px] tracking-widest">Abuja Central Campus</p>
+              <p className="text-slate-400 font-bold uppercase text-[10px] tracking-widest">Abuja Church</p>
             </div>
           </motion.div>
         </div>
       </section>
+
+
+        <Gallery/>
 
       {/* 2. FOUNDER SECTION - DR. DAVID OGBUELI */}
       <section className="py-24 bg-[#003399] text-white overflow-hidden">

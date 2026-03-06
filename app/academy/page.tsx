@@ -5,7 +5,7 @@ import {
   BookOpen, Target, Award, ArrowRight, Briefcase,
   CheckCircle2, Sparkles, ChevronRight, ShieldCheck, TrendingUp, Clock, MapPin
 } from 'lucide-react';
-import { abujaHqMedia } from '../components/data';
+import { abujaHqMedia } from '../components/data/media';
 
 
 export default function TrainingPortals() {

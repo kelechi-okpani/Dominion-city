@@ -2,7 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, ArrowRight, Camera, ZoomIn, Heart } from 'lucide-react';
-import { abujaHqMedia } from '../components/data';
+import { abujaHqMedia } from '../components/data/media';
+import GlobalAtmosphereSlider from '../components/Gallery/GallerySection';
 
 export default function GalleryPage() {
 
@@ -31,6 +32,10 @@ export default function GalleryPage() {
           Direct snapshots from our Gudu Headquarters. Witness the power of worship and the transformation of lives across our social platforms.
         </p>
       </div>
+
+
+        <GlobalAtmosphereSlider/>
+
 
       {/* 2. DYNAMIC MARQUEE STYLES */}
       <style dangerouslySetInnerHTML={{ __html: `

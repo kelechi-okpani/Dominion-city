@@ -17,11 +17,10 @@ export default function Navbar() {
   const navLinks = [
     { name: 'About Us', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
-     { name: 'Chapters', href: '/satellite' },
     { name: 'Give', href: '/give' },
     { name: 'The Academy', href: '/academy' },
     { name: 'Programs', href: '/programs' },
-   
+    { name: 'Chapters', href: '/satellite' },
     { name: 'Media Hub', href: '/media' },
     { name: 'Missions', href: '/missions' },
  
