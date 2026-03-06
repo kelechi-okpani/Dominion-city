@@ -1,6 +1,9 @@
 "use client";
 import React from 'react';
 import { Lock, User, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
+
+
 
 export default function AdminLogin() {
   return (
@@ -31,9 +34,14 @@ export default function AdminLogin() {
             </div>
           </div>
 
-          <button className="w-full py-4 bg-[#003399] text-white rounded-2xl font-bold uppercase text-xs tracking-[0.2em] hover:bg-[#D4AF37] hover:text-[#003399] transition-all shadow-xl shadow-[#003399]/10">
-            Unlock Dashboard
-          </button>
+
+
+
+          <Link href="/admin" className="w-full block">
+            <button className="cursor-pointer w-full py-4 bg-[#003399] text-white rounded-2xl font-bold uppercase text-xs tracking-[0.2em] hover:bg-[#D4AF37] hover:text-[#003399] transition-all shadow-xl shadow-[#003399]/10">
+              Unlock Dashboard
+            </button>
+          </Link>
         </form>
       </div>
     </div>
