@@ -40,16 +40,16 @@ const AcademyPage = () => {
           </div>
 
           {/* Tab Switcher (Segmented Control) */}
-          <div className="bg-slate-100 p-1.5 rounded-2xl flex items-center gap-1 self-start">
+          <div className=" bg-slate-100 p-1.5 rounded-2xl flex items-center gap-1 self-start">
             <button 
               onClick={() => setActiveTab('DCA')}
-              className={`px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === 'DCA' ? 'bg-white text-[#4B0082] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+              className={`cursor-pointer px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === 'DCA' ? 'bg-white text-[#4B0082] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
             >
               DCA
             </button>
             <button 
               onClick={() => setActiveTab('DLI')}
-              className={`px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === 'DLI' ? 'bg-white text-[#4B0082] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+              className={`cursor-pointer px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === 'DLI' ? 'bg-white text-[#4B0082] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
             >
               DLI
             </button>

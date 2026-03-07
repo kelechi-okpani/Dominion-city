@@ -3,10 +3,23 @@
 import React, { useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+
 import { 
-  LayoutDashboard, Users, GraduationCap, 
-  Wallet, LogOut, Cross, X, ChevronRight, Menu, ChevronLeft
+  LayoutDashboard, 
+  UserCheck,      
+  HeartHandshake,
+  BookOpen,       
+  Home,          
+  Wallet,          
+   GraduationCap, User, Settings,
+   LogOut, Cross, X, ChevronRight, Menu, ChevronLeft
 } from 'lucide-react';
+
+ import { 
+  Users2, CalendarDays, Mic2, Heart, 
+  ShieldAlert, Gift, MessageSquare, Map
+} from 'lucide-react';
+
 
 interface SidebarProps {
   isOpen: boolean; // Mobile open/close
@@ -19,15 +32,48 @@ const Sidebar = ({ isOpen, setOpen }: SidebarProps) => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const menuItems = [
-    { icon: LayoutDashboard, label: 'Dashboard', path: '/admin' },
-    { icon: Users, label: 'Soul Winning', path: '/admin/souls' },
-    { icon: GraduationCap, label: 'Academy', path: '/admin/academy' },
-    
-    { icon: Users, label: 'Attendance', path: '/admin/attendance' },
 
-    { icon: Wallet, label: 'Treasury', path: '/admin/finance' },
-  ];
+
+ 
+
+const additionalMenuItems = [
+  // --- PEOPLE & ENGAGEMENT ---
+  { icon: Users2, label: 'Membership', path: '/admin/members' },      // Full CRM: birthdays, baptism status, marriage info
+  { icon: MessageSquare, label: 'Communications', path: '/admin/sms' }, // Bulk SMS/Email for service reminders
+  
+  // --- OPERATIONS ---
+  { icon: CalendarDays, label: 'Events & Booking', path: '/admin/events' }, // Hall rentals, weddings, funeral bookings
+  { icon: Mic2, label: 'Media Archive', path: '/admin/media' },       // Managing sermon transcripts and video links
+  
+  // --- CARE & OUTREACH ---
+  { icon: Heart, label: 'Welfare', path: '/admin/welfare' },         // Tracking food/financial aid to members
+  { icon: Gift, label: 'First Timers', path: '/admin/visitors' },     // Dedicated funnel to convert visitors to members
+  
+  // --- LOGISTICS ---
+  { icon: Map, label: 'Bus Routes', path: '/admin/transport' },      // Managing church buses and pickup points
+  { icon: ShieldAlert, label: 'Security', path: '/admin/security' }, // Incident reporting and parking lot management
+];
+
+
+const menuItems = [
+  { icon: LayoutDashboard, label: 'Dashboard', path: '/admin' },
+  { icon: UserCheck, label: 'Attendance', path: '/admin/attendance' },
+  { icon: HeartHandshake, label: 'Soul Winning', path: '/admin/souls' },
+  { icon: BookOpen, label: 'Academy', path: '/admin/academy' },
+  { icon: Home, label: 'Cell Unit', path: '/admin/cell' },
+    { icon: Mic2, label: 'Media Archive', path: '/admin/media' },
+
+   { type: 'divider' }, 
+
+
+
+  //  { icon: MessageSquare, label: 'Communications', path: '/admin/sms' },
+  // { icon: Wallet, label: 'Treasury', path: '/admin/finance' },
+
+
+
+];
+
 
   const sidebarWidth = isCollapsed ? 'w-20' : 'w-72';
 
@@ -84,15 +130,16 @@ const Sidebar = ({ isOpen, setOpen }: SidebarProps) => {
 
         {/* Navigation */}
         <nav className="flex-1 px-3 space-y-1">
-          {menuItems.map((item) => {
-            const isActive = pathname === item.path;
-            return (
-              <button
-                key={item.label}
-                onClick={() => {
-                  router.push(item.path);
-                  if (window.innerWidth < 1024) setOpen(false);
-                }}
+            {menuItems.map((item) => {
+              if (!item.path) return null;
+              const isActive = pathname === item.path;
+              return (
+                <button
+                  key={item.label}
+                  onClick={() => {
+                    router.push(item.path);
+                    if (window.innerWidth < 1024) setOpen(false);
+                  }}
                 className={`
                  cursor-pointer relative w-full flex items-center gap-4 px-3 py-3 rounded-xl transition-all duration-200 group
                   ${isActive 
@@ -126,6 +173,10 @@ const Sidebar = ({ isOpen, setOpen }: SidebarProps) => {
           })}
         </nav>
 
+
+
+
+        
         {/* Footer / Sign Out */}
         <div className="p-4 border-t border-slate-100">
           <button className={`
