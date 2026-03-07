@@ -62,6 +62,7 @@ const menuItems = [
   { icon: BookOpen, label: 'Academy', path: '/admin/academy' },
   { icon: Home, label: 'Cell Unit', path: '/admin/cell' },
     { icon: Mic2, label: 'Media Archive', path: '/admin/media' },
+    { icon: Wallet, label: 'Expenses', path: '/admin/expenses' },
 
    { type: 'divider' }, 
 

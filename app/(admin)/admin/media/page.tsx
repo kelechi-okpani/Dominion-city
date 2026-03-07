@@ -7,7 +7,7 @@ import {
   UploadCloud, ChevronLeft, Info, Camera, 
   FileText, MoreVertical 
 } from 'lucide-react';
-import { abujaHqMedia } from '@/app/components/data/media';
+import { abujaHqMedia, dominionCommunityMedia } from '@/app/components/data/media';
 
 // --- Types ---
 interface MediaItem {
@@ -29,7 +29,9 @@ interface Album {
 }
 
 // --- Constants ---
-const DEFAULT_ALBUM_COVER = "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=1000&auto=format&fit=crop";
+// const DEFAULT_ALBUM_COVER = "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=1000&auto=format&fit=crop";
+// const DEFAULT_ALBUM_COVER = "  "https://scontent.fabv3-2.fna.fbcdn.net/v/t39.30808-6/612141347_1342172967952366_5511741730072550255_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=SXVURZquJxoQ7kNvwFDL6dZ&_nc_oc=Adl5NExiRgUU2u32SuNhXzmKHw3x73yBXLnTEhTbiJ9-FqtVHcZy0ad_YdHLP6zzR8s&_nc_zt=23&_nc_ht=scontent.fabv3-2.fna&_nc_gid=FaEltbjDEJP-nmgMgSy51w&_nc_ss=8&oh=00_AfxoWsdei19nb5_TQVzVtP14jfxcr8cbfOIKeXlS98REbg&oe=69AF7687";
+const DEFAULT_ALBUM_COVER = dominionCommunityMedia[3]
 
 const BRANCHES = [
   { id: 'hq', name: 'Dc- Gudu HQ' },
